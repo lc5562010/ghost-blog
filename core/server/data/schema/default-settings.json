@@ -31,7 +31,7 @@
             }
         },
         "logo": {
-            "defaultValue": "https://static.ghost.org/v1.0.0/images/ghost-logo.svg"
+            "defaultValue": "/content/images/default-avatar.jpg"
         },
         "cover_image": {
             "defaultValue": "https://static.ghost.org/v1.0.0/images/blog-cover.jpg"

@@ -21,6 +21,8 @@
   "license": "MIT",
   "main": "./core/index",
   "scripts": {
+    "pm2:start": "pm2 start index.js --name 'ghost'",
+    "pm2:stop": "pm2 stop index.js --name 'ghost'",
     "start": "node index",
     "dev": "DEBUG=ghost:* grunt dev",
     "test": "grunt validate",

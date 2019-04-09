@@ -4,12 +4,11 @@
         <div class="widget-profile-cover overlay {{#if cover_image}}" style="background-image: url({{cover_image}}){{else}}no-cover{{/if}}"></div>
         <div class="widget-profile-header">
             <a class="widget-profile-logo" href="{{url}}">
-            {{!-- {{#if profile_image}}
+            {{#if profile_image}}
                 <img src="{{img_url profile_image}}" alt="{{@site.title}}" />
             {{else}}
                 <img src="{{asset "img/user-image.png"}}" alt="{{@site.title}}" />
-            {{/if}} --}}
-            <img src="/content/images/default-avatar.jpg" alt="{{@site.title}}" />
+            {{/if}}
             </a>
         </div>
         <span class="widget-profile-title label label-xlg label-minty arrowed-in arrowed-in-right">{{name}}</span>

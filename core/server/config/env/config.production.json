@@ -1,0 +1,26 @@
+{
+    "url": "https://jsjsjs.icu",
+     "server": {
+         "port": 2368
+     },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "127.0.0.1",
+            "user": "root",
+            "password": "root",
+            "database": "ghost",
+            "charset": "utf8"
+        }
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    }
+}

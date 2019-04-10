@@ -108,7 +108,7 @@
         });
         var uniqueYear = $.unique(yearArray);
         for (var i = 0; i < uniqueYear.length; i++) {
-            var html = "<div class='archives-item fadeInDown animated'>" +
+            var html = "<div class='archives-item slideInUp animated'>" +
                 "<div class='archives-year'>" +
                 "<h3><time datetime='" + uniqueYear[i] + "'>" + uniqueYear[i] + "</time></h3>" +
                 "</div></div>";

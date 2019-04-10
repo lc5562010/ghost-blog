@@ -23,6 +23,12 @@
                         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date timeago="ture"}}</time>
                         <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">({{date format="YYYY-MM-DD"}})</time>
                     </span>
+                    {{#is "post"}}
+                    <span class="post-meta-item">
+                        <i class="fa fa-eye"></i>
+                        <span id="busuanzi_value_page_pv"></span>阅读
+                    </span>
+                    {{/is}}
                     {{#if tags}}
                     <span class="post-meta-item post-meta-tags">
                         <i class="fa fa-tag"></i>

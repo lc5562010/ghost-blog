@@ -312,8 +312,9 @@ margin on the iframe, cause it breaks stuff. */
 /* Wraps the main content & footer */
 
 .site-wrapper {
-    position: relative;
+    margin-bottom: -48px;
     z-index: 10;
+    position: relative;
     min-height: 100%;
     background: var(--background-color);
     -webkit-transition: -webkit-transform 0.5s ease;
@@ -1159,14 +1160,29 @@ margin on the iframe, cause it breaks stuff. */
 /* ==========================================================================
    10. Footer - The bottom of every page
    ========================================================================== */
-
+   
+   @media only screen and (max-width: 768px) {
+       /* mobile stick */
+        .f-push {
+            height: 80px;
+        }
+   }
+   @media only screen and (min-width: 768px) {
+       /* pc */
+        .f-push {
+            height: 60px;
+        }
+   }
+   
 .site-footer {
-    margin: 1.25em auto 0;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
     padding: 1rem 15px;
     line-height: 1.75em;
     color: #BBC7CC;
-    background: var(--font-color);
-    border-top: 4px solid var(--primary-color);
+    background: var(--footer-color);
+    /* border-top: 4px solid var(--primary-color); */
 }
 .site-footer a {
     color: #BBC7CC;

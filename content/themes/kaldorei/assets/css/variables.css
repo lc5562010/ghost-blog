@@ -1,6 +1,7 @@
 :root {
   /* Colours */
-  --primary-color: #46cdcf;
+  --primary-color: #5db5bf;
+  /* --primary-color: #46cdcf; */
   --primary-light-hover: #3d84a8;
   --primary-dark-hover: #48466d;
   --font-color: #2c3f51;
@@ -8,6 +9,7 @@
   --border-color: #ebf2f6;
   --selection-color: #3d84a8;
   --post-meta: #9EABB3;
+  --footer-color: #3b4045;
 
 
   --darkgrey: #15171A;
@@ -19,3 +21,22 @@
   --sans-serif: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --serif: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 0 6px rgba(180 ,180 ,180 ,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #aaa;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #ccc;
+  -webkit-border-radius: 3px;
+} 

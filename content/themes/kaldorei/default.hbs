@@ -30,25 +30,26 @@
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="site-footer clearfix">
-      <div class="footer-meta container">
-        <section class="copyright">
-          <a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}},
-          Powered by <a href="https://ghost.org" target="_blank">Ghost</a>,
-          Theme <a href="https://github.com/xiaoluoboding/kaldorei" target="_blank">Kaldorei</a>
-        </section>
-        <section class="poweredby">
-          <span id="busuanzi_container_site_pv">
-            访问<span id="busuanzi_value_site_pv"></span>次,
-          </span>
-          <span id="busuanzi_container_site_uv">
-            访客<span id="busuanzi_value_site_uv"></span>人
-          </span>
-        </section>
-      </div>
-    </footer>
-
+    <div class="f-push"></div>
   </div>
+
+  <footer class="site-footer clearfix">
+    <div class="footer-meta container">
+      <section class="copyright">
+        <a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}},
+        Powered by <a href="https://ghost.org" target="_blank">Ghost</a>,
+        Theme <a href="https://github.com/xiaoluoboding/kaldorei" target="_blank">Kaldorei</a>
+      </section>
+      <section class="poweredby">
+        <span id="busuanzi_container_site_pv">
+          访问<span id="busuanzi_value_site_pv"></span>次,
+        </span>
+        <span id="busuanzi_container_site_uv">
+          访客<span id="busuanzi_value_site_uv"></span>人
+        </span>
+      </section>
+    </div>
+  </footer>
 
   {{!-- Search box --}}
   {{>"search"}}
